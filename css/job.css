@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Work+Sans&display=swap');
+body {
+    font-family:'Nunito';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Add this CSS to your existing stylesheet or in a new <style> tag in your HTML */
+
+#pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#pagination-buttons button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 3%;
+}
+
+.job-box {
+    padding: 20px;
+    width: calc(40% - 20px); /* Set each box to take 50% width with a 20px gap */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius:20px ;
+    transition: background 0.5s,transform 0.5s ;
+}
+.job-box:hover{
+    background:#fff;
+    box-shadow: 10px 10px 10px 10px lightblue;
+}
+h2 {
+    font-size: 30px ;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family:'Nunito'; 
+}
+
+p {
+    font-family:'Nunito'; 
+}
+
+.apply-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #000000;;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+#search-form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#search-form input,
+#search-form select,
+#search-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+#search-form input:focus,
+#search-form select:focus {
+    border-color: #007BFF;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #000000;
+}
+/*fottetr*/
+.fotter {
+    background-color: #333;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px;
+    width: 100%;
+}
+
+.contact-info, .social-media {
+    padding: 20px;
+    width: calc(40% - 20px); /* Set each box to take 50% width with a 20px gap */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    font-size: 13px;
+    font-weight: 300;
+    font-family:'Nunito';
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-family:'Nunito';
+}
+
+.contact-info p {
+    margin: 0;
+    font-family:'Nunito';
+    font-size: 18px;
+}
+
+.social-media h1 {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+}
+
+/* Responsive styling for job boxes on smaller screens */
+@media screen and (max-width: 1068px) {
+    .job-box {
+        width: 100%; /* Make each box take 100% width on smaller screens */
+    }
+    .fotter {
+        width: 100%; /* Make each box take 100% width on smaller screens */
+    }
+}
